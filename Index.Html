@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Menu Dapur Pie Jom</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f1e7;
+    color: #4a3728;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+h1 { text-align: center; color: #8b5e3c; }
+
+.category-title {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #d3c4b1;
+}
+
+.price { font-weight: bold; color: #2d5a27; margin-right: 10px; }
+
+.btn-add {
+    background: #8b5e3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.order-box {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f3ece4;
+    border-radius: 10px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.order-actions button {
+    margin-left: 4px;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-plus { background: #8b5e3c; color: #fff; }
+.btn-minus { background: #d9a441; color: #fff; }
+.btn-delete { background: #c0392b; color: #fff; }
+
+.btn-reset {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #888;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-pesan {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #25d366;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Katalog Menu Dapur Pie Jom</h1>
+<h1>081585847413</h1>
+
+<!-- VARIAN PIE -->
+<div class="category-title">Varian Pie</div>
+<div class="menu-item"><span>Pie Susu</span><div><span class="price">30.000</span><button class="btn-add" onclick="addItem('Pie Susu',30000)">+</button></div></div>
+<div class="menu-item"><span>Pie Susu Keju</span><div><span class="price">35.000</span><button class="btn-add" onclick="addItem('Pie Susu Keju',35000)">+</button></div></div>
+<div class="menu-item"><span>Pie Brownis Chocochips</span><div><span class="price">40.000</span><button class="btn-add" onclick="addItem('Pie Brownis Chocochips',40000)">+</button></div></div>
+<div class="menu-item"><span>Pie Brownis Almond</span><div><span class="price">45.000</span><button class="btn-add" onclick="addItem('Pie Brownis Almond',45000)">+</button></div></div>
+<div class="menu-item"><span>Pie Brownis Keju</span><div><span class="price">43.000</span><button class="btn-add" onclick="addItem('Pie Brownis Keju',43000)">+</button></div></div>
+<div class="menu-item"><span>Pie Brownis Mix CChips Almond</span><div><span class="price">43.000</span><button class="btn-add" onclick="addItem('Pie Brownis Mix CChips Almond',43000)">+</button></div></div>
+<div class="menu-item"><span>Pie Brownis Kacang Cincang</span><div><span class="price">40.000</span><button class="btn-add" onclick="addItem('Pie Brownis Kacang Cincang',40000)">+</button></div></div>
+<div class="menu-item"><span>Pie Pisang</span><div><span class="price">45.000</span><button class="btn-add" onclick="addItem('Pie Pisang',45000)">+</button></div></div>
+
+<!-- BROWNIS & BOLU -->
+<div class="category-title">Brownis & Bolu</div>
+<div class="menu-item"><span>Brownis Panggang (L)</span><div><span class="price">100.000</span><button class="btn-add" onclick="addItem('Brownis Panggang (L)',100000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Panggang (S)</span><div><span class="price">50.000</span><button class="btn-add" onclick="addItem('Brownis Panggang (S)',50000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Hias (L)</span><div><span class="price">140.000</span><button class="btn-add" onclick="addItem('Brownis Hias (L)',140000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Hias (S)</span><div><span class="price">75.000</span><button class="btn-add" onclick="addItem('Brownis Hias (S)',75000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Hias Biasa (L)</span><div><span class="price">115.000</span><button class="btn-add" onclick="addItem('Brownis Hias Biasa (L)',115000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Hias Biasa (S)</span><div><span class="price">65.000</span><button class="btn-add" onclick="addItem('Brownis Hias Biasa (S)',65000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Kukus Ori 20x10</span><div><span class="price">50.000</span><button class="btn-add" onclick="addItem('Brownis Kukus Ori 20x10',50000)">+</button></div></div>
+<div class="menu-item"><span>Brownis Kukus Coklat Keju 20x10</span><div><span class="price">55.000</span><button class="btn-add" onclick="addItem('Brownis Kukus Coklat Keju 20x10',55000)">+</button></div></div>
+<div class="menu-item"><span>Bolu Pandan Santan (L)</span><div><span class="price">70.000</span><button class="btn-add" onclick="addItem('Bolu Pandan Santan (L)',70000)">+</button></div></div>
+<div class="menu-item"><span>Bolu Pandan Santan 20x10</span><div><span class="price">40.000</span><button class="btn-add" onclick="addItem('Bolu Pandan Santan 20x10',40000)">+</button></div></div>
+<div class="menu-item"><span>Bolu Tape Sukade (L)</span><div><span class="price">70.000</span><button class="btn-add" onclick="addItem('Bolu Tape Sukade (L)',70000)">+</button></div></div>
+<div class="menu-item"><span>Bolu Tape Sukade 20x10</span><div><span class="price">40.000</span><button class="btn-add" onclick="addItem('Bolu Tape Sukade 20x10',40000)">+</button></div></div>
+<div class="menu-item"><span>Prol Tape Kismis (L)</span><div><span class="price">70.000</span><button class="btn-add" onclick="addItem('Prol Tape Kismis (L)',70000)">+</button></div></div>
+<div class="menu-item"><span>Prol Tape Kismis (S)</span><div><span class="price">40.000</span><button class="btn-add" onclick="addItem('Prol Tape Kismis (S)',40000)">+</button></div></div>
+
+<!-- CAKE & PUDING -->
+<div class="category-title">Cake & Puding</div>
+<div class="menu-item"><span>Marmer Cake Butter (L)</span><div><span class="price">200.000</span><button class="btn-add" onclick="addItem('Marmer Cake Butter (L)',200000)">+</button></div></div>
+<div class="menu-item"><span>Marmer Cake Butter (S)</span><div><span class="price">100.000</span><button class="btn-add" onclick="addItem('Marmer Cake Butter (S)',100000)">+</button></div></div>
+<div class="menu-item"><span>Marmer Cake Margarin (L)</span><div><span class="price">200.000</span><button class="btn-add" onclick="addItem('Marmer Cake Margarin (L)',200000)">+</button></div></div>
+<div class="menu-item"><span>Marmer Cake Margarin (S)</span><div><span class="price">100.000</span><button class="btn-add" onclick="addItem('Marmer Cake Margarin (S)',100000)">+</button></div></div>
+<div class="menu-item"><span>Puding Kelapa Cup</span><div><span class="price">6.000</span><button class="btn-add" onclick="addItem('Puding Kelapa Cup',6000)">+</button></div></div>
+<div class="menu-item"><span>Puding Kelapa Box isi 9</span><div><span class="price">55.000</span><button class="btn-add" onclick="addItem('Puding Kelapa Box isi 9',55000)">+</button></div></div>
+<div class="menu-item"><span>Puding Kelapa Family Size</span><div><span class="price">80.000</span><button class="btn-add" onclick="addItem('Puding Kelapa Family Size',80000)">+</button></div></div>
+<div class="menu-item"><span>Fla Aren 250 ml</span><div><span class="price">15.000</span><button class="btn-add" onclick="addItem('Fla Aren 250 ml',15000)">+</button></div></div>
+
+<!-- SOFT COOKIES -->
+<div class="category-title">Soft Cookies</div>
+<div class="menu-item"><span>Soft Cookies Ori</span><div><span class="price">9.000</span><button class="btn-add" onclick="addItem('Soft Cookies Ori',9000)">+</button></div></div>
+<div class="menu-item"><span>Soft Cookies Coklat</span><div><span class="price">10.000</span><button class="btn-add" onclick="addItem('Soft Cookies Coklat',10000)">+</button></div></div>
+<div class="menu-item"><span>Soft Cookies Red Velvet</span><div><span class="price">10.000</span><button class="btn-add" onclick="addItem('Soft Cookies Red Velvet',10000)">+</button></div></div>
+<div class="menu-item"><span>Soft Cookies Matcha</span><div><span class="price">10.000</span><button class="btn-add" onclick="addItem('Soft Cookies Matcha',10000)">+</button></div></div>
+<div class="menu-item"><span>Soft Cookies Marshmallow</span><div><span class="price">11.000</span><button class="btn-add" onclick="addItem('Soft Cookies Marshmallow',11000)">+</button></div></div>
+<div class="menu-item"><span>Soft Cookies Oreo</span><div><span class="price">11.000</span><button class="btn-add" onclick="addItem('Soft Cookies Oreo',11000)">+</button></div></div>
+<div class="menu-item"><span>Soft Cookies Red Velvet Cheese</span><div><span class="price">11.000</span><button class="btn-add" onclick="addItem('Soft Cookies Red Velvet Cheese',11000)">+</button></div></div>
+
+<!-- ORDER -->
+<div class="order-box">
+<h3>🧾 Pesanan</h3>
+<div id="orderList">Belum ada pesanan</div>
+<strong>Total: Rp <span id="total">0</span></strong>
+<button class="btn-reset" onclick="resetOrder()">♻ Reset Pesanan</button>
+<a href="#" class="btn-pesan" onclick="sendWhatsApp()">💬 PESAN VIA WHATSAPP</a>
+</div>
+
+</div>
+
+<script>
+let orders = {}, total = 0;
+
+function addItem(name, price){
+    orders[name] = orders[name] ? {qty: orders[name].qty+1, price} : {qty:1, price};
+    total += price; renderOrder();
+}
+function removeItem(name){
+    if(!orders[name]) return;
+    orders[name].qty--; total -= orders[name].price;
+    if(orders[name].qty<=0) delete orders[name];
+    renderOrder();
+}
+function deleteItem(name){
+    if(!orders[name]) return;
+    total -= orders[name].qty * orders[name].price;
+    delete orders[name]; renderOrder();
+}
+function resetOrder(){
+    if(confirm('Reset semua pesanan?')){ orders={}; total=0; renderOrder(); }
+}
+function renderOrder(){
+    let html='';
+    for(let i in orders){
+        html+=`<div class="order-item">${i} x${orders[i].qty}
+        <span>
+        <button class="btn-minus" onclick="removeItem('${i}')">➖</button>
+        <button class="btn-plus" onclick="addItem('${i}',${orders[i].price})">➕</button>
+        <button class="btn-delete" onclick="deleteItem('${i}')">🗑</button>
+        </span></div>`;
+    }
+    document.getElementById('orderList').innerHTML = html || 'Belum ada pesanan';
+    document.getElementById('total').innerText = total.toLocaleString('id-ID');
+}
+function sendWhatsApp(){
+    if(total===0) return alert('Pilih menu dulu');
+    let msg='Halo, saya ingin pesan:%0A';
+    for(let i in orders){ msg+=`- ${i} x${orders[i].qty}%0A`; }
+    msg+=`%0ATotal: Rp ${total.toLocaleString('id-ID')}`;
+    window.open(`https://wa.me/6281585847413?text=${msg}`,'_blank');
+}
+</script>
+
+</body>
+</html>
